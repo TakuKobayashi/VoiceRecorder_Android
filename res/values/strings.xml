@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="hello">Hello World, VoiceRecoderActivity!</string>
+	<string name="app_name">VoiceRecoder</string>
+	<string name="PreferenceName">VoiceRecoder</string>
+	<string name="RecordVolumeKey">RecordeVolume</string>
+	<string name="RecordBeforeVolumeKey">RecordBeforeVolume</string>
+	<string name="SettingFormatKey">OutputFormat</string>
+	<string name="SettingAudioSamplingRateKey">AudioSamplingRate</string>
+	<string name="SettingMaxDurationKey">MaxDuration</string>
+	<string name="SettingTimeKey">Time</string>
+	<string name="SettingPhoneRecordKey">PhoneRecord</string>
+	<string name="IntentAudioFilePathKey">AudioFile</string>
+	<string name="RemainNonSaveFileKey">RemainFile</string>
+	<string name="RecordingKey">Recording</string>
+	<string name="VolumeAutoSetKey">VolumeAutoSet</string>
+
+
+	<string name="RecordStartTimeKey">RecordStartTime</string>
+	<string name="BackgroundRecordKey">BackgroundRecord</string>
+	<!-- <string name="BackgroundServiceName">RecordingBackground</string> -->
+	<string name="PhoneOffhookKey">PhoneOffhook</string>
+
+	<string name="IntentAudioSourceKey">AudioSource</string>
+	<string name="IntentDurationKey">Duration</string>
+
+
+	<string name="RecordStartButtonText">Start</string>
+	<string name="RecordStopButtonText">Stop</string>
+	<string name="AudioPlayerStartButtonText">再生</string>
+	<string name="AudioPlayerPauseButtonText">一時停止</string>
+	<string name="RecordingText">録音中</string>
+
+	<string name="ChoiceRecordFileListTitle">操作</string>
+	<string name="ChangeFileNameTitle">名前変更</string>
+	<string name="SaveFileNameTitle">ファイル名</string>
+	<string name="TimerRecordTitle">録音予約</string>
+
+	<string name="SettingRecordCategorytitle">録音時の設定</string>
+	<string name="SettingPlayCategorytitle">再生時の設定</string>
+	<string name="SettingSpecialRecordCategorytitle">保存するオーディオファイルの設定</string>
+
+	<string name="SettingOutputFormatDialogTitle">保存ファイル形式</string>
+	<string name="SettingOutputFormatTitle">ファイル形式</string>
+	<string name="SettingOutputFormatSummary">録音するファイル形式を設定します。</string>
+
+	<string name="SettingAudioSamplingRateDialogTitle">サンプリングレート設定</string>
+	<string name="SettingAudioSamplingRateTitle">サンプリングレート</string>
+	<string name="SettingAudioSamplingRateSummary">選択した数値が高い程、音質が良くなりますが保存されるファイル容量も増大します。</string>
+
+	<string name="SettingMaxDurationDialogTitle">録音時間</string>
+	<string name="SettingMaxDurationTitle">録音時間</string>
+	<string name="SettingMaxDurationSummary">録音時間を設定します。</string>
+
+	<string name="SettingVolumeAutoSetTitle">音量自動調整</string>
+	<string name="SettingVolumeAutoSetSummary">再生時、自動的にアプリ内に保存した音量にします。</string>
+
+	<string name="SettingBackGroundRecordTitle">バックグラウンド録音</string>
+	<string name="SettingBackGroundRecordSummary">録音中に本アプリを終了させても、録音状態が継続されます。時間になるか、アプリ内の録音停止ボタンを押して録音を停止します。</string>
+
+	<string name="SettingPhoneRecordTitle">通話録音</string>
+	<string name="SettingPhoneRecordSummary">チェックした場合、通話を行う際、通話内容を自動的に録音します。</string>
+
+	<string name="DialogSecondText">秒</string>
+	<string name="DialogMiniuteText">分</string>
+	<string name="DialogHourText">時間</string>
+	<string name="DialogOKButton">OK</string>
+	<string name="DialogSettingButton">設定</string>
+	<string name="DialogSearchButton">検索</string>
+	<string name="DialogChangeButton">変更</string>
+	<string name="DialogSaveButton">保存</string>
+	<string name="DialogCancelButton">キャンセル</string>
+	<string name="DialogDefaultSaveButton">おまかせ</string>
+	<string name="DialogInfinityRadioButton">∞</string>
+
+	<string name="MenuText1">録音予約</string>
+	<string name="MenuText2">検索</string>
+	<string name="MenuText3">設定</string>
+	<string name="MenuText4">選択削除</string>
+	<string name="SetRecordVolumeMessage">メディアの音量</string>
+	<string name="SettingRecorderTitle">レコーダー設定</string>
+
+	<string name="NoAvailableSpaceMessage">SDCardの空き容量が不足したので停止します。</string>
+	<string name="TimeoutMessage">時間になりましたので、録音を停止します。</string>
+	<string name="SettingFailedMessage">設定に失敗しました。</string>
+	<string name="SettingNonNumberMessage">数字を入力してください。</string>
+	<string name="EditTextEmptyMessage">入力内容が空です。時間を入力してください。</string>
+	<string name="EditTextUnder0Message">1以上の値を入力してください。</string>
+	<string name="CheckFileDeleteMessage">削除してもよろしいですか?</string>
+	<string name="RadioButtonNoSelectMessage">項目を選択してください。</string>
+	<string name="AudioFileRenameFailedMessage">ファイル名の変更に失敗しました。</string>
+	<string name="SDCardMountRemovingMessage">SDCardを挿入してください。</string>
+	<string name="SDCardNoAvailableSpaceMessage">SDCardの空き容量が不足しています\n1MB以上になるようにしてください。</string>
+	<string name="RecordStartMessage">録音を開始します。</string>
+	<string name="RecordStopMessage">録音を停止します。</string>
+	<string name="PhoneRecordErrorFromRecordingMessage">現在録音中のため、通話の録音をキャンセルします。</string>
+	<string name="PhoneRecordStartMessage">通話の録音を開始します。</string>
+	<string name="PhoneRecordFinishMessage">通話を録音しました。</string>
+	<string name="SettingTimerErrorMessage">今より遅い時間を設定してください。</string>
+	<string name="TimeUpWIthinRecordingMessage">予約した時間になりましたが、録音中のため、予約を取り消します。</string>
+	<string name="RecordingStartErrorMessage">録音開始に失敗しました。</string>
+
+</resources>

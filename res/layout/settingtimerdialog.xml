@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+
+	<DatePicker
+	    android:id="@+id/datePicker"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerHorizontal="true" />
+
+	<TimePicker
+	    android:id="@+id/timePicker"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@+id/datePicker" />
+
+	<Spinner
+	    android:id="@+id/TimerSpinner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:prompt="@string/SettingMaxDurationTitle"
+	    android:layout_below="@+id/timePicker"
+	    />
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/TimerSpinner"
+	    >
+
+	    <EditText
+	        android:id="@+id/TimerDuration"
+	        android:inputType="number"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/Unit"
+	        />
+
+	    <TextView
+	        android:id="@+id/Unit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="30sp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignBottom="@+id/TimerDuration"
+	        />
+
+	</RelativeLayout>
+
+</RelativeLayout>

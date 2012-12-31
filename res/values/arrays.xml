@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="ChioceAudioFile">
+		<item>再生</item>
+		<item>送信</item>
+		<item>ファイル名編集</item>
+		<item>削除</item>
+		<item>キャンセル</item>
+	</string-array>
+
+	<string-array name="SettingOutputFormat">
+		<item>WAVE(wav)</item>
+		<item>3GPP(3gp)</item>
+		<item>MPEG4(mp4)</item>
+	</string-array>
+
+	<string-array name="SettingOutputFormatValues">
+		<item>.wav</item>
+		<item>.3gp</item>
+		<item>.mp4</item>
+	</string-array>
+
+	<string-array name="SettingAudioSamplingRate">
+		<item>8000</item>
+		<item>16000</item>
+		<item>22050</item>
+		<item>44100</item>
+	</string-array>
+
+	<string-array name="SettingMaxDurationSpinner">
+	    <item>∞</item>
+	    <item>時間指定(秒)</item>
+	    <item>時間指定(分)</item>
+	    <item>時間指定(時間)</item>
+    </string-array>
+
+	<string-array name="SettingTimerSpinner">
+        <item>時間指定(秒)</item>
+        <item>時間指定(分)</item>
+        <item>時間指定(時間)</item>
+    </string-array>
+
+</resources>

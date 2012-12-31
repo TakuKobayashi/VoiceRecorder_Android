@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+	<TextView
+		android:id="@+id/PlayingTimeText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:textSize="40sp" />
+
+	<com.taku.kobayashi.voicerecorder.VisualizerView
+		android:id="@+id/VisualizerView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@+id/MediaPlayerSeek"
+		android:layout_below="@+id/PlayingTimeText"
+		/>
+
+	<SeekBar
+		android:id="@+id/MediaPlayerSeek"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/StartTimeText"
+		android:layout_centerHorizontal="true" />
+
+	<TextView
+		android:id="@+id/StartTimeText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/PlayerButtonsLayout"
+		android:layout_alignParentLeft="true"
+		android:text="00:00:00" />
+
+	<TextView
+		android:id="@+id/EndTimeText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/PlayerButtonsLayout"
+		android:layout_alignParentRight="true" />
+
+	<LinearLayout
+		android:id="@+id/PlayerButtonsLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		>
+
+		<ImageButton
+			android:id="@+id/BackToStartButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/backtostart_icon"
+		/>
+
+		<ImageButton
+			android:id="@+id/PlayerBackButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/playerback_icon"
+		/>
+
+		<ImageButton
+			android:id="@+id/MediaPlayerButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		/>
+
+		<ImageButton
+						android:id="@+id/FastForwardButton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/fastforward_icon"
+				/>
+
+		</LinearLayout>
+
+</RelativeLayout>

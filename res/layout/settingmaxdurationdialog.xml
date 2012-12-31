@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+
+    <!-- promptはタイトル -->
+	<Spinner
+		android:id="@+id/MaxDurationSpinner"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:prompt="@string/SettingMaxDurationTitle"
+	/>
+
+	<RelativeLayout
+        android:id="@+id/EditTime"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/MaxDurationSpinner"
+		>
+
+		<EditText
+			android:id="@+id/MaxDuration"
+			android:inputType="number"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/UnitText"
+		/>
+
+		<TextView
+			android:id="@+id/UnitText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30sp"
+			android:layout_alignParentRight="true"
+			android:layout_alignBottom="@+id/MaxDuration"
+		/>
+	</RelativeLayout>
+
+
+
+	<!--
+	       android:drawSelectorOnTop="true"
+	<RadioGroup
+		android:id="@+id/SetTimeRadio"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+	>
+
+		<RadioButton
+			android:id="@+id/infinity"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/DialogInfinityRadioButton"
+			android:textSize="40sp"
+		/>
+
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+		>
+
+			<RadioButton
+			android:id="@+id/EditTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			/>
+
+			<EditText
+			android:id="@+id/MaxDuration"
+			android:inputType="number"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/UnitText"
+			android:layout_toRightOf="@+id/EditTime"
+			/>
+
+			<TextView
+			android:id="@+id/UnitText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/DialogMiniuteText"
+			android:textSize="30sp"
+			android:layout_alignParentRight="true"
+			android:layout_alignBottom="@+id/MaxDuration"
+			/>
+		</RelativeLayout>
+	</RadioGroup>
+-->
+
+</RelativeLayout>

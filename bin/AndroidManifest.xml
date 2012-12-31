@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.taku.kobayashi.voicerecorder"
+	android:versionCode="1"
+	android:versionName="1.0" >
+
+	<uses-sdk android:minSdkVersion="9" />
+	<!-- 音声を取得(記録)するために必要 -->
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	<!-- SDカードにファイルを書き込むために必要 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<!-- 電話を着信した時の情報を取得するために必要 -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<!-- 電話を発信した時の情報を取得するために必要 -->
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+	<!-- バイブレーターを起動させるために必要 -->
+	<uses-permission android:name="android.permission.VIBRATE"/>
+
+	<application
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name" >
+		<activity
+			android:name=".VoiceRecorderActivity"
+			android:label="@string/app_name"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:label="@string/app_name"
+			android:name=".MeidaPlayerActivity"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:label="@string/app_name"
+			android:name=".SettingActivity"
+			android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+			</intent-filter>
+		</activity>
+
+		<!-- IntentServiceを用いての非同期処理(バックグラウンド処理)の実装のために必要 -->
+		<service android:name=".VoiceRecorderOnBackGroundService"></service>
+
+		<!-- 電話を発信、着信した時の情報を取得するために必要 -->
+		<receiver
+			android:name="VoiceRecorderBroadcastReceiver" >
+			<intent-filter>
+				<action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+				<action android:name="android.intent.action.PHONE_STATE" />
+			</intent-filter>
+		</receiver>
+	</application>
+
+</manifest>
